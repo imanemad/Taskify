@@ -9,3 +9,7 @@
     box-sizing: border-box;
     font-family: 'IranSans';
 }
+
+button,a{
+    cursor: pointer;
+}

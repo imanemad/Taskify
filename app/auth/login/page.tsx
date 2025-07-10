@@ -27,8 +27,8 @@ export default function LoginPage() {
     };
 
     return (
-        <main className="max-w-md mx-auto p-4">
-            <h1 className="text-2xl font-bold mb-4">ورود به Taskify</h1>
+        <main className="max-w-md mx-auto mt-20 bg-white p-8 rounded shadow">
+            <h1 className="text-2xl font-bold mb-4 text-center">ورود به برنامه</h1>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <input
                     type="text"
@@ -47,9 +47,10 @@ export default function LoginPage() {
                 {error && <p className="text-red-500">{error}</p>}
                 <button
                     type="submit"
-                    className="bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition cursor-pointer">
+                    className="bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition">
                         ورود
                 </button>
+                <a href="/auth/register" className="text-blue-600 text-center">ثبت نام</a>
             </form>
         </main>
     );

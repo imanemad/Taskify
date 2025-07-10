@@ -17,7 +17,7 @@ export default function Dashboard() {
                 <p>شما وارد نشده‌اید. لطفاً وارد شوید.</p>
                 <button
                     onClick={() => router.push('/auth/login')} 
-                    className="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition cursor-pointer">
+                    className="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
                         ورود
                 </button>
             </div>
@@ -29,7 +29,7 @@ export default function Dashboard() {
             <h1 className="text-2xl font-bold">سلام، {session.user?.name}!</h1>
             <button
                 onClick={() => signOut()}
-                className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition cursor-pointer">
+                className="mt-4 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">
                     خروج
             </button>
         </main>
